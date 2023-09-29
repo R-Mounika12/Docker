@@ -1,4 +1,4 @@
-package com.abb.rm.mgmt.controller;
+
 
 public class TestClass {
 
