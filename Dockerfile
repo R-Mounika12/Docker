@@ -8,6 +8,4 @@ COPY . /app
  
 RUN apt-get update && apt install openjdk-11-jre-headless &&  javac TestClass.java
 
-EXPOSE 8080
-  
 CMD ["java", "TestClass"] 

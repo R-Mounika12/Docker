@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: first-docker
+spec:
+  containers:
+    - name: first-docker
+      image: first-docker:latest
