@@ -5,6 +5,6 @@ metadata:
 spec:
   containers:
     - name: first-docker
-      image: first-docker:latest
+      image: first-docker-image:latest
       ports:
         - containerPort: 90
