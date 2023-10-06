@@ -6,3 +6,5 @@ spec:
   containers:
     - name: first-docker
       image: first-docker:latest
+      ports:
+        - containerPort: 90
