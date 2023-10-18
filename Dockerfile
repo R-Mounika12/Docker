@@ -6,6 +6,6 @@ WORKDIR /app
 # Copy the files from the host file system to the image file system
 COPY . /app  
  
-RUN apt-get update && apt install -y openjdk-11-jre-headless && TestClass.java
+RUN apt-get update && apt install -y openjdk-11-jre-headless && javac -y TestClass.java
 
 CMD ["java", "TestClass"] 
