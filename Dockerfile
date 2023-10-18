@@ -6,7 +6,7 @@ WORKDIR /app
 # Copy the files from the host file system to the image file system
 COPY . /app  
  
-RUN apt-get update && apt install -y openjdk-11-jre-headless &&  javac TestClass.java
+RUN apt-get update && apt install -y openjdk-11-jre-headless && sudo apt-get -y install galternatives && javac TestClass.java
 
 env java_home=/usr/lib/jvm/java-1.8-openjdk
 env path="$java_home/bin:${path}"
