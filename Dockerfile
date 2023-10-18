@@ -8,4 +8,6 @@ COPY . /app
  
 RUN apt-get update && apt install -y openjdk-11-jre-headless && javac -y TestClass.java
 
+ENV JAVAC = $(JAVA_HOME)/bin/javac
+
 CMD ["java", "TestClass"] 
